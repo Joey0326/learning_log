@@ -52,6 +52,10 @@ BOOTSTRAP3 = {
     'include_jquery':True,
 }
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
+
+ALLOWED_HOSTS = ['*']
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
